@@ -2,6 +2,7 @@
 * Copyright 2017 by ChartIQ, Inc.
 * All rights reserved.
 */
+import { ICentralLogger } from "./ICentralLogger";
 /**
  * @introduction
  *
@@ -52,5 +53,5 @@ export declare var LoggerConstructor: (dependencies?: {
 /** When running unit tests, we don't want to use the real Logger.
  * `window` is an easy indicator of our environment.
  * @TODO - refactor to some sort of global like FSBL.environment. */
-export declare const Logger: any;
+export declare const Logger: ICentralLogger;
 export default Logger;

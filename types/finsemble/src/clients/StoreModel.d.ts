@@ -75,7 +75,7 @@ declare class StoreModel extends _BaseClient {
      * @example
      * store.setValues([{ field:'field1', value:"new value" }]);
      */
-    setValues(fields: setValuesParam[], cb?: StandardCallback): any;
+    setValues(fields: setValuesParam[], cb?: StandardCallback): void;
     /**
      * Get a value from the store. If global is not set, we'll check local first then we'll check global. Returns the value of the field. If no callback is given and the value is local, this will run synchronously.
      * @param {object|string} params The field where the value is stored.

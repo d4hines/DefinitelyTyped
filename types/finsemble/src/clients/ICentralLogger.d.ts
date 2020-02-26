@@ -8,9 +8,9 @@ export interface ICentralLogger extends ILogger {
     start(): void;
     /** A utility function for determining if a given object is formatted for transport via the Central Logging service. */
     isLogMessage(message: any): boolean;
-    setting(): object;
+    setting(): any;
     callStack(): string;
-    unregisterClient(client: object): void;
+    unregisterClient(client: any): void;
     /** Sets the Router client for this instance of the Logger. This is necessary
      * to do after instantiation because of the mutual dependency between the
      * Logger and the Router client.
